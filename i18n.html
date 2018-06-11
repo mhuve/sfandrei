@@ -1,0 +1,43 @@
+<html lang="en">
+<HEAD>
+        <script src="common/jquery.js"></script>
+
+  <script src="jquery_i18n/CLDRPluralRuleParser.js"></script>
+  <script src="jquery_i18n/jquery.i18n.js"></script>
+  <script src="jquery_i18n/jquery.i18n.messagestore.js"></script>
+  <script src="jquery_i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="jquery_i18n/jquery.i18n.language.js"></script>
+  <script src="jquery_i18n/jquery.i18n.parser.js"></script>
+  <script src="jquery_i18n/jquery.i18n.emitter.js"></script>
+  <script src="jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+
+  <script src="jquery_i18n/main-jquery_i18n.js"></script>
+		<script type="text/javascript">
+		
+		
+$.i18n( {
+			locale: "en"
+		} );
+		
+	
+var path=window.location.pathname;
+var ind= path.lastIndexOf('/');
+var folder= path.slice(0,ind);
+	 $.i18n().load('./i18n/de.json', 'de' );
+	$.i18n().load('./i18n/ro.json', 'ro' );
+
+ </script>
+ 
+	
+		 
+</HEAD>
+<BODY>
+        <h2 style="text-align: center; color:#777;">Internationalization </h2>
+<a 
+        <a href="#" class="lang-switch" data-locale="ro">romanian</a> |
+<a href="#" class="lang-switch" data-locale="de">german</a>
+
+        <span style="margin-left: 20px;" data-i18n="greeting" >Welcome to the Demo Site!</span><br>
+        <span style="margin-left: 20px;" data-i18n="bye">Your Selected Language is: Default </span>
+</BODY>
+</html>
