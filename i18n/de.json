@@ -1,0 +1,15 @@
+{
+   "@metadata": {
+   "locale":"de",
+       "author": "max",
+       "description": "An example JSON file",
+       "last-updated": "2016-09-21",
+       "message-documentation": "qqq"  
+   },
+   "greeting": "Danke shoen",
+   "bye": "sehen sie wieder",
+   "about_short_desc":"vorsprung durch technik",
+   "div2_data":"brott, zwiebeln, appfel, musscat nuss",
+   "div3_data":"the clarinet is a nicer instrument than the saxophone"
+
+}
