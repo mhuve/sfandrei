@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+	
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	 
+	  <script src="common/jquery.js"></script>
+	  <script src="jquery_i18n/CLDRPluralRuleParser.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.messagestore.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.fallbacks.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.language.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.parser.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.emitter.js"></script>
+	  <script src="jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+
+	  
+			<script type="text/javascript">
+			
+	jQuery(document).ready(function() {
+		$.i18n( {
+				locale: "ro"
+			} );
+		
+	
+		var path=window.location.pathname;
+		var ind= path.lastIndexOf('/');
+		var folder= path.slice(0,ind);
+		$.i18n().load('./i18n/de.json', 'de' );
+		$.i18n().load('./i18n/ro.json', 'ro' );
+		var def=$.i18n().load('./i18n/en.json', 'en' );
+		def.done(function(){$('body').i18n();});
+		
+		$('.lang-switch').click(function(e) {
+			e.preventDefault();
+			$.i18n().locale = $(this).data('locale');
+			$('body').i18n();
+  });
+	}); 
+	 </script>
+    
+  </head>
+  <body>
+  <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Durata Postului Sfintilor Apostoli Petru si Pavel</h5>
+    <p class="card-text">Pavel nu are o durata fixa, deoarece inceputul lui este in functie de data variabila a Sfintelor Pasti.  Acest post incepe intotdeauna in lunea dupa Duminica Tuturor Sfintilor, prima duminica dupa Rusalii - Pogorarea Sfantului Duh. Tinand seama ca mentinem Pascalia calendarului neindreptat, Sfintele Pasti se pot sarbatori intre 4 aprilie si 8 mai.  Astfel, se poate intampla ca Duminica Tuturor Sfintior sa fie dupa 29 iunie si Postul Sfintilor Petru si Pavel sa se desfiinteze.
+	Pentru a afla durata Postului Sampetrului din orice an, se foloseste urmatoarea regula: cate zile sunt de la data Invierii (inclusiv) din anul respectiv pana la 3 mai, atatea zile tine postul.</p>
+  </div>
+  </div>
+  <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Dieta</h5>
+    <p class="card-text">In Postul Sfintilor Petru si Pavel, sambata si duminica se mananca peste. Avem dezlegarea la peste si pe 24 iunie, atunci cand sarbatorim Nasterea Sfantului Ioan Botezatorul. Dezlegarea la peste avem si luni, marti si joi, numai daca in aceste zile praznuim un sfant cu doxologie mare si cu cruce neagra in calendar. Cand o astfel de sarbatoare cade miercuri sau vineri se dezleaga la untdelemn si vin. Daca sarbatoarea Sfintilor Apostoli Petru si Pavel cade miercuri sau vineri, se face dezlegare la peste, vin si ulei.
+</p>
+  </div>
+  </div>
+  <div class="card" style="">
+  <div class="card-body">
+    <h5 class="card-title">Istorie</h5>
+    <p class="card-text">Sfântul Apostol Petru era pescar din Betsaida, la Marea Galileei, şi se chema Simon înainte de a se întâlni cu Domnul. Era frate cu Sfântul Apostol Andrei, „cel întâi chemat” la slujirea credinţei. Era cel mai vârstnic dintre cei doisprezece Ucenici şi deseori vorbea în numele Apostolilor, rugând pe Învăţătorul să le tâlcuiască înţelesul tainelor credinţei.
+
+Sfântul Apostol Pavel a fost învăţat, fariseu şi rabin în religia evreilor, ucenic al lui Gamaliel şi cunoscător al întregii învăţături din vremea sa. Se numea Saul înainte de a veni la credinţă şi era de origine din Tarsul Ciliciei.
+Împuternicit de sinedriul din Ierusalim, Pavel a prigonit cumplit pe cei ce mărturiseau credinţa în Hristos şi propovăduiau Învierea Lui. Pe când călătorea spre cetatea Damascului, pentru a prinde pe creştinii de acolo, Saul a văzut pe Domnul, Care i S-a arătat în chip minunat, şi a crezut în El, lepădând rătăcirea în care trăise până atunci</p>
+  </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
