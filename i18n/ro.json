@@ -4,5 +4,22 @@
    "about":"Despre pagina",
    "div2_data":"dizia a doua de nfanterie",
    "div3_data":"dizia a treia de infanterie motorizata cu cai de nfanterie",
-   "about_short_desc":"Acesta este locul perfect pentru a descrie proiectul dumneavoastra"
+   "about_short_desc":"Acesta este locul perfect pentru a descrie proiectul dumneavoastra",
+   "first_day_event":"compot de prune",
+   "second_day_event":"Sf. Mc. Alexandru si Antonia; Sf. Sfintit Mc. Timotei, episcopul Prusiei (Dezlegare la peste)Duminica a 2-a dupa Rusalii (a Sfintilor Romani); erau batausi din cartierul Dumbrava Luminoasa",
+   "third_day_event":"magiun de prune",
+   "forth_day_event":"ceapa cu mincare de praz",
+   "fifth_day_event":"mincare de vinete cu sarmale umplute cu orez",
+   "sixth_day_event":"mincare de bame cu ovaz",
+   "seventh_day_event":"ziua a saptea",
+   "nav_section_1":"Acasa",
+   "nav_section_2":"Cine Suntem",
+   "nav_section_3":"Exemple",
+   "nav_section_4":"Slujiori",
+   "nav_section_5":"Calendar",
+   "calendar_label_day_0":"Duminica",
+   "calendar_label_day_1":"Luni",
+   "calendar_label_day_2":"Marti",
+   "calendar_label_day_3":"Miercuri",
+   "calendar_label_day_4":"Joi"
 }
